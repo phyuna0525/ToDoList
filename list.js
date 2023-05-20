@@ -47,6 +47,11 @@ function addList() {
   const listItemText = document.createElement("p");
   listItem.id = "listStyle";
   listItemText.textContent = inputValue;
+
+  listItemText.addEventListener("click", function () {
+    listItemText.classList.toggle("completed");
+  });
+
   const deleteButton = document.createElement("button");
   deleteButton.textContent = "-";
 
@@ -63,6 +68,14 @@ function addList() {
   textInput.value = "";
 }
 
-listItemText.addEventListener("click", function () {
-  listItemText.target.classList.toggle("completed");
-});
+//취소선 추가하기
+//class 넣고 빼기
+//
+// function wdfvb() {
+//   //1. 클래스 목록에 있는지 검사
+//   if()
+
+//   else
+//   // //2. 참: 클래스 제거, 거짓: 클래스 추가
+//   // document.getElementsByClassName('todoinput')[0].classList
+// }
