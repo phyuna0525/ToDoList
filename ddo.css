@@ -81,4 +81,13 @@ button {
 #listStyle {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+}
+
+deleteButton {
+  align-items: flex-end;
+}
+
+.completed {
+  text-decoration: line-through;
 }
