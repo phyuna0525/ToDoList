@@ -80,8 +80,9 @@ button {
 
 #listStyle {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  padding-right: 20px;
 }
 
 deleteButton {
@@ -90,4 +91,21 @@ deleteButton {
 
 .completed {
   text-decoration: line-through;
+}
+
+li::marker {
+  border-radius: 50%;
+}
+
+#Memo {
+  resize: vertical;
+  border: 0;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+input:focus {
+  outline: none;
 }
